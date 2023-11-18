@@ -33,6 +33,11 @@
   background-color: rgb(118, 184, 246);
   border-radius: 10px;
 }
+.product-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .product-right {
   width: 60vw;
   height: 100vh;

@@ -6,6 +6,7 @@ import data from '../data';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { WhatsappShareButton } from 'react-share';
 const ProductPage = () => {
   const { slug } = useParams();
   const [product, setProduct] = useState(null);
@@ -39,12 +40,11 @@ const ProductPage = () => {
                 alt="Headphone"
                 className="product-image"
               />
-              <input
-                type="button"
-                placeholder="Share"
-                className="product-share"
-                value="Share"
-              />
+              <div className="product-share">
+                <WhatsappShareButton url={window.location.href}>
+                  Share on whatsapp
+                </WhatsappShareButton>
+              </div>
             </div>
             <div className="product-right">
               <div className="product-description"></div>
