@@ -8,9 +8,7 @@ const authRoute = require('./Routes/AuthRoute');
 const User = require('./Models/UserModel');
 const data = require('./data');
 mongoose
-  .connect(
-    'mongodb+srv://napraveen:praveen@praveencluster.ihcxeia.mongodb.net/ecommerce'
-  )
+  .connect('')
   .then(() => console.log('MongoDB is  connected successfully'))
   .catch((err) => console.error(err));
 
